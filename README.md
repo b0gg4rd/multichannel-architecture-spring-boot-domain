@@ -1,2 +1,2 @@
-# jee-architecture-spring-boot-domain
-JEE Architecture seed with Spring Boot, Spring Security, MyBatis and Domain Layer
+# multichannel-architecture-spring-boot-domain
+Multichannel Architecture seed with Spring Boot, Spring Security, MyBatis and Domain Layer
