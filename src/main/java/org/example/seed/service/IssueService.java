@@ -14,5 +14,5 @@ public interface IssueService {
 
     Future<ResponseIssueEvent> updateIssue(final UpdateIssueEvent updateIssueEvent);
 
-    void deleteIssue(final DeleteIssueEvent deleteIssueEvent);
+    ResponseIssueEvent deleteIssue(final DeleteIssueEvent deleteIssueEvent);
 }

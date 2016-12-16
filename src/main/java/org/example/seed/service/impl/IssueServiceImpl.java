@@ -98,12 +98,14 @@ public class IssueServiceImpl implements IssueService {
     @Async
     @CacheEvict(value = "issues", allEntries = true)
     @Transactional(isolation = Isolation.READ_COMMITTED)
-    public void deleteIssue(final DeleteIssueEvent deleteIssueEvent) {
+    public ResponseIssueEvent deleteIssue(final DeleteIssueEvent deleteIssueEvent) {
 
         this.logger.info("> deleteIssue");
 
         this.issueMapper.deleteIssue(deleteIssueEvent);
 
         this.logger.info("< deleteIssue");
+
+        return null;
     }
 }
